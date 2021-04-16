@@ -11,8 +11,12 @@ body {
 body main{
     min-height: 100vh;
 }
-.wrapperclass {
-    width: 70%;
+.wrapperclass1{
+    width: 80%;
+    margin: 0 auto;
+}
+.wrapperclass2{
+    width: 75%;
     margin: 0 auto;
 }
 a{
@@ -34,6 +38,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 auto;
 }
 .sociallinks_top {
     margin: 0;
@@ -49,7 +54,7 @@ a:hover {
     list-style: none;
     float: right;
     padding: 0px 10px;
-    font-size: 25px;
+    font-size: 20px;
     color: #777777;
 }
 .socialmedia_text{
@@ -63,8 +68,7 @@ a:hover {
     list-style: none;
     display: block;
     text-align: center;
-    padding: 0px 10px;
-    font-size: 25px;
+    padding: 0px 10p;
     background-color: #147AD6;
     border-radius: 5px;
 }
@@ -82,28 +86,34 @@ a:hover {
     height: 20px;
     border-right: 1px solid #AEAEAE;
     padding: 0 20px;
+    font-size: 0.8em;
 }
 .callus_top_num{
     padding: 0 10px;
 }
 .callus_log_lan{
-    width: 100%;
+    width: 300px;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 0.8em;
     color: #fff;
+    text-align: left;
 }
 .callus_log{
     color: #fff;
     width: 300px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 5px;
 }
 .callus_lan{
     display: flex;
     flex-direction: row;
     color: #fff;
     width: 200px;
-    align-items: flex-start;
+    align-items: center;
+    margin: 0 30px;
 }
 .callus_lan_earthicon{
     font-size: 1.2em;
@@ -113,9 +123,11 @@ a:hover {
 }
 .callus_lan_arrowicon{
     font-size: 0.7em;
+    padding-left: 0;
 }
 .change_lan_list{
     list-style: none;
+    padding-right: 0;
 }
 .headerbg {
     background-image: url(../images/startup-photos.jpg);
@@ -132,6 +144,8 @@ a:hover {
 .mainnavtop{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .of320to480_responsive {
     display: none;
@@ -165,6 +179,14 @@ a:hover {
     flex-grow: 1;
     margin: 0;
     font-size: 1.05em;
+}
+.searchicon_navtop{
+    padding: 20px;
+}
+.searchicon_navtop:hover{
+    background-color: #f76a22;
+    border-radius: 5px;
+    color: #fff;
 }
 .mainmenu_li_search:hover{
     color: #e94c3b;
@@ -239,58 +261,58 @@ a:hover {
 
                     /*body*/
                     /*services*/
-.services_bg {
+.immigration_country_bg {
     background-image: url(../images/17580.jpg);
     background-position: center;
     background-size: cover;
     width: 100vw;
     height: 600px;
 }
-.services{
+.immigration_country{
     text-align: center;
     align-items: center;
     justify-content: center;
     padding: 30px 0;
 }
-.services_Desc {
+.immigration_country_Desc {
     font-size: 0.9em;
     margin-top: 30px;
     margin-bottom: 20px;
     display: block;
     text-align: center;
 }
-.ourservices_title{
+.immigration_country_title{
     margin-bottom: 0;
 }
-.ourservices_line {
+.immigration_country_line {
     display: block;
     width: 50px;
     height: 2px;
     background-color: #f96b1f;
     margin: 10px auto;
 }
-.ourservices_panel{
+.immigration_country_panel{
     width: 800px;
     height: 300px;
     background-color: #fff;
     margin: 30px auto;
     filter: drop-shadow(0 0 5px #c4c4c4);
 }
-.ourserviceslist{
+.immigration_country_list{
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
     padding-left: 20px;
     padding-right: 20px;
 }
-.ourservicesitem{
+.immigration_country_item{
     list-style: none;
     padding: 0;
     width: 25%;
     padding: 20px;
     font-size: 0.8em;
 }
-.ourservicesitem_image, .ourservicesitem_image2{
+.immigration_countryitem_image, .immigration_countryitem_image2{
     width: 60px;
     height: 60px;
     border: 1px solid #AEAEAE;
@@ -299,23 +321,23 @@ a:hover {
     display: block;
     margin: 0 auto;
 }
-.ourservicesitem_image2{
+.immigration_countryitem_image2{
 
 }
-.ourservicesitem_title{
+.immigration_country_title{
     color: #212121;
 }
-.ourservices_Desc2{
+.immigration_country_Desc2{
     color: #7a7a7a;
     text-align: justify;
 }
-.ourservicesitem_readmore{
+.immigration_countryitem_readmore{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 0 15px;
 }
-.ourservicesitem_readmore:hover {
+.immigration_countryitem_readmore:hover {
     color: #f96b1f;
 }
 .clearfix::after,
@@ -595,64 +617,6 @@ a:hover {
 }
 
                     /*ourteam*/
-.ourteam {
-    background-color: #ffffff;
-    width: 100vw;
-    padding: 30px 0px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.ourteam_Desc {
-    color: #000000;
-    padding: 0px;
-    font-size: 0.9em;
-}
-.titleourteam {
-    color: #000;
-    margin-bottom: 0;
-}
-.ourteam_ex {
-    color: #4e4e4e;
-    width: 50%;
-    display: inline-flex;
-    text-align: center;
-    margin-bottom: 0;
-}
-.team_image_panel {
-    
-}
-.teamlist {
-    display: flex;
-    flex-direction: row;
-}
-.teamitem {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border: 2px solid #777777;
-    border-radius: 8px;
-    position: relative;
-}
-.teamitem::before {
-    content: ' ';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #4e4e4e;
-    opacity: 0;
-}
-.teamitem:hover:before {
-    opacity: 0.8;
-}
-.teamitem:hover {
-    
-}
 .show_name1{
     content: ' ';
     position: absolute;
@@ -671,74 +635,23 @@ a:hover {
     text-align: center;
     padding-top: 50px;
 }
-.teamitem img {
-    width: 100%;
-    overflow: hidden;
-}
-.teamitem_name{
-    margin: 0;
-}
-.teamitem_edu{
-   margin: 10px;
-}
-@media (min-width:20em) and (max-width:30em) {
-    .ourteam {
-        text-align: center;
-        width: 100%;
-        height: 400px;
-        float: right;
-    }
-    .titleourteam {
-        font-size: 1em;
-    }
-    .ourteam_ex {
-        font-size: 0.7em;
-        width: 100%;
-    }
-    .teamlist {
-        width: 100%;
-    }
-    .teamitem {
-        width: 50%;
-        float: right;
-        text-align: center;
-    }
-    .ourproj_image_panel {
-        width: 10vw;
-        height: 40vh;
-        padding: 10px 0;
-    }
-    .ourproj_item {
-        width: 25vw;
-        height: 25vh;
-    }
-}
-@media (min-width:30em) and (max-width:45em) {
-    .ourteam_Desc {
-        font-size: 0.7em;
-        width: 100%;
-        padding: 10px 0;
-    }
-    .ourproj_image_panel {
-        width: 10vw;
-        height: 40vh;
-        padding: 10px 0;
-    }
-    .ourproj_item {
-        width: 25vw;
-        height: 25vh;
-    }
-}
 
-                    /*Certificate*/
-.Certificate {
+                    /*ourservices*/
+.ourservices_image_panel{
+    background-image: url(../images/airport-terminal1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.ourservices{
     background-color: #fff;
     width: 100vw;
     display: flex;
     flex-direction: row;
     height: 400px;
 }
-.Certificate_Desc_panel {
+.ourservices_Desc_panel{
     text-align: center;
     width: 600px;
     font-size: 0.9em;
@@ -747,27 +660,27 @@ a:hover {
     margin: 0 auto;
     position: relative;
 }
-.titleCertificate {
+.title_ourservices{
     color: #fff;
     padding-top: 20px;
     display: block;
     text-align: right;
     margin: 10px 0;
 }
-.ourCertificate_line{
+.ourservices_line{
     display: block;
     width: 40px;
     height: 2px;
     background-color: #fff;
     margin: 0;
 }
-.ourCertificate_Desc{
+.ourservices_Desc{
     color: #e7e7e7;
     width: 300px;
     text-align: justify;
     padding-top: 10px;
 }
-.Certificate_readmore{
+.ourservices_readmore{
     width: 140px;
     height: 45px;
     background-color: #121b56;
@@ -788,29 +701,18 @@ a:hover {
     display: inline-block;
     margin: auto;
 }
-.Certificate_readmore:hover{
+.ourservices_readmore:hover{
     width: 160px;
     height: 45px;
     background-color: #0f1b69;
     border: 1px solid #0f1b69;
     transform: translate(0px, 0px);
 }
-.Certificate_image_panel{
-    background-image: url(../images/airport-terminal1.jpg);
-    background-size: cover;
-    width: 100%;
-}
-.Certificate_list_panel{
+.ourservices_list_panel{
     margin: 0 auto;
     padding: 0 50px;
 }
-.Certificate_image {
-    text-align: center;
-    width: 100%;
-    padding: 0px;
-    position: relative;
-}
-.Certificate_list {
+.ourservices_list{
     width: 100%;
     padding: 30px 0;
     display: flex;
@@ -818,48 +720,40 @@ a:hover {
     flex-direction: row;
     position: relative;
 }
-.Certificate_listitem {
+.ourservices_listitem{
     list-style: none;
     display: flex;
     flex-direction: row;
     text-align: center;
     width: 50%;
     padding: 20px;
-
 }
-.Certificate_listitem_image {
-    width: 170px;
-    height: 170px;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.Certificate_text{
+.ourservices_text{
     display: flex;
     flex-direction: column;
     padding: 0 30px;
 }
-.Certificate_Desc2{
+.ourservices_Desc2{
     font-size: 0.72em;
     text-align: justify;
     color: #fff;
 }
-.Certificate_icon{
+.ourservices_icon{
     font-size: 2.5em;
     color: #bc4b21;
 }
-.Certificate_name{
-    color: #ffffff;
+.ourservices_name{
+    color: #fff;
     margin: 0;
     display: block;
     text-align: right;
     font-size: 0.9em;
 }
-.Certificate_type{
-    color: #ffffff;
+.ourservices_type{
+    color: #fff;
     margin-top: 10px;
 }
-.show_title_Certificate{
+.show_title_ourservices{
     content: ' ';
     position: absolute;
     width: 170px;
@@ -868,30 +762,30 @@ a:hover {
     left: 318px;
     color: #646464;
     opacity: 0;
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
     border-radius: 50%;
     background-color: #adadad;
     transition: all 1s ease-in-out;
 }
-.show_title_Certificate:hover{
+.show_title_ourservices:hover{
     opacity: 0.7;
     color: #ff1d1d;
     display: inline-block;
     text-align: center;
     padding-top: 80px;
 }
-@media (min-width:20em) and (max-width:30em) {
-    .Certificate {
+@media (min-width:20em) and (max-width:30em){
+    .Certificate{
         background-image: url(../images/breather-181282.jpg);
         background-size: cover;
         width: 100vw;
         height: 1000px;
         box-shadow: 0px -2px 25px #858585;
     }
-    .titleCertificate {
+    .titleCertificate{
         font-size: 1.1em;
     }
-    .ourCertificate_Desc {
+    .ourCertificate_Desc{
         font-size: 0.7em;
         text-align: justify;
     }
@@ -910,6 +804,7 @@ a:hover {
 }
 .title_visa_consultation{
     margin-bottom: 0;
+    margin-top: 60px;
 }
 .visa_consultation_line{
     display: block;
@@ -932,23 +827,28 @@ a:hover {
     flex-direction: row;
     flex-flow: wrap;
     margin: 0 auto;
-    width: 800px;
-    height: 400px;
+    width: 850px;
+    height: 350px;
     background-color: #fff;
     position: relative;
+    margin-bottom: 80px;
+    filter: drop-shadow(0 0 5px #c4c4c4);
 }
-.visa_consultation_boxes{
-    width: 700px;
-    height: 300px;
+.visa_consultation_boxgroupe{
+    width: 750px;
+    height: 200px;
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
     padding: 0;
-    margin: 0 auto;
-    text-align: center;
+    text-align: right;
+    margin: 20px auto;
+}
+.visa_consultation_box{
+    padding: 0 10px;
 }
 .box_name_visacon, .box_mail_visacon,
-.box_sub_visacon {
+.box_sub_visacon{
     width: 220px;
     height: 50px;
     border: 1px solid #bebebe;
@@ -957,16 +857,42 @@ a:hover {
     margin: 0 auto;
 }
 .box_Desc_visacon{
-    width: 400px;
+    width: 460px;
     height: 50px;
     border: 1px solid #bebebe;
     border-radius: 5px;
     color: #777777;
-    margin-right: 7px;
+    position: relative;
+}
+.send_request{
+    width: 220px;
+    height: 50px;
+    background-color: #f96b1f;
+    border: 1px solid #f96b1f;
+    border-radius: 5px;
+    display: block;
+    filter: drop-shadow(0 0 2.5px #f96b1f);
+    padding: 10px 0;
+    position: absolute;
+    top: 53%;
+    left: 90px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+}
+.send_request:hover{
+    background-color: #f86312;
+    border: 1px solid #f86312;
+}
+.send_request_text{
+    font-size: 0.9em;
+    display: inline-block;
+    margin: auto;
 }
 .visa_consultation_footer{
     background-color: #121b52;
-    width: 800px;
+    width: 100%;
     height: 50px;
     position: absolute;
     bottom: 0;
@@ -1045,261 +971,45 @@ a:hover {
     }
 }
 
-                    /*contactus*/
-.contactus {
-    background-image: url(../images/breather-163403.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    filter: drop-shadow(0 0 15px #858585);
-}
-.box_contactus {
-    display: block;
-    text-align: center;
-    padding: 0px;
-}
-.contactus_panel {
-    margin: 20px 0;
-    padding: 10px 0px;
-}
-.contactus_Desc {
-    font-size: 0.9em;
-    color: #e7e7e7;
-    width: 50%;
-    display: inline-block;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.contactus_Desc_panel {
-    padding: 10px 0;
-}
-.title_contactus {
-    color: #ffffff;
-}
-.box_name_contactus,
-.box_mail_contactus, .box_sub_contactus {
-    width: 400px;
-    height: 50px;
-    border: 2px solid #bebebe;
-    border-radius: 5px;
-    color: #777777;
-    padding: 0 10px;
-    margin: 2px 0;
-    filter: drop-shadow(0 30px 8px #6e6e6e);
-}
-.box_Desc_contactus {
-    width: 400px;
-    height: 200px;
-    border: 2px solid #bebebe;
-    border-radius: 5px;
-    color: #777777;
-    margin: 2px 0;
-    filter: drop-shadow(0 0 8px #6e6e6e);
-}
-.box_name_contactus:hover,
-.box_mail_contactus:hover, .box_sub_contactus:hover {
-    width: 400px;
-    height: 50px;
-    border: 2px solid #105fa5;
-    border-radius: 5px;
-    color: #777777;
-    line-height: 50px;
-    background-color: #ffffff;
-}
-.box_Desc_contactus:hover {
-    width: 400px;
-    height: 200px;
-    border-radius: 5px;
-    border: 2px solid #105fa5;
-    color: #777777;
-    line-height: 0px;
-    background-color: #ffffff;
-}
-.bluebutton1 {
-    background-color: #147AD6;
-    height: 3em;
-    width: 10em;
-    display: block;
-    position: 50%;
-    padding: 0px;
-    border-radius: 10px;
-    text-align: center;
-    color: #ffffff;
-}
-.bluebutton2 {
-    background-color: #147AD6;
-    height: 3em;
-    width: 10em;
-    display: block;
-    position: 50%;
-    padding: 0px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    color: #ffffff;
-}
-.bluebutton2:hover {
-    background-color: #105fa5;
-    height: 3.2em;
-    width: 10.4em;
-    color: #ffffff;
-}
-.textarea1 {
-    width: 300px;
-    height: 30px;
-    text-align: right;
-    padding: 5px;
-    border: 1.5px solid #AEAEAE;
-    border-radius: 5px;
-}
-.textarea1:hover {
-    width: 310px;
-    height: 30px;
-}
-.submit_contactus {
-    width: 150px;
-    height: 50px;
-    background-color: #147AD6;
-    border: 1px solid #147AD6;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    transform-origin: center center;
-    filter: drop-shadow(0 0 2.5px #178ff8);
-    padding: 10px 0;
-}
-.submit_contactus:hover {
-    width: 250px;
-    background-color: #0f6ab9;
-    border: 1px solid #0f6ab9;
-    transform: translate(-550px, 30px);
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-}
-.submitbutton_contactus {
-    color: #ffffff;
-    align-items: center;
-}
-@media (min-width:20em) and (max-width:30em) {
-    .title_contactus {}
-    .contactus_Desc {
-        width: 90vw;
-        text-align: justify;
-        font-size: 0.8em;
-        margin: 0 20px;
-    }
-    .box_contactus {
-        width: 80vw;
-    }
-    .box_name_contactus,
-    .box_mail_contactus, .box_sub_contactus {
-        width: 260px;
-        height: 40px;
-        display: inline-block;
-        border: 2px solid #bebebe;
-        border-radius: 5px;
-        color: #777777;
-        padding: 5px 0;
-        filter: drop-shadow(0 30px 8px #6e6e6e);
-    }
-    .box_Desc_contactus {
-        width: 260px;
-        height: 150px;
-        display: inline-block;
-        border: 2px solid #bebebe;
-        border-radius: 5px;
-        color: #777777;
-        filter: drop-shadow(0 0 8px #d3d3d3);
-    }
-    .box_name_contactus:hover,
-    .box_mail_contactus:hover,
-    .box_sub_contactus:hover {
-        width: 270px;
-        height: 40px;
-        display: inline-block;
-        border: 2px solid #178ff8;
-        border-radius: 5px;
-        margin: 0;
-        color: #777777;
-        background-color: #fff;
-    }
-    .box_Desc_contactus:hover {
-        width: 270px;
-        height: 150px;
-        display: inline-block;
-        margin: 0;
-        border-radius: 5px;
-        border: 2px solid #178ff8;
-        color: #777777;
-        background-color: #f7f7f7;
-    }
-    .submit_contactus {
-        width: 100px;
-        height: 30px;
-        background-color: #147AD6;
-        border: 1px solid #147AD6;
-        border-radius: 5px;
-        float: right;
-        text-align: center;
-        transform-origin: center center;
-        filter: drop-shadow(0 0 2.5px #178ff8);
-        transform: translate(-600px, 30px);
-        padding: 10px 0;
-    }
-    .submit_contactus:hover {
-        width: 100px;
-        height: 30px;
-        background-color: #105fa5;
-        border: 1px solid #105fa5;
-        transform: translate(-550px, 30px);
-        transition-duration: 1s;
-        transition-timing-function: ease-out;
-    }
-}
-
                     /*footer*/
-.mainfooter {
+.mainfooter{
     background-color: #050d3c;
-    display: flex;
-    flex-direction: row;
     width: 100vw;
     color: #fff;
+    position: relative;
 }
-.box_footer {
+.box_footer{
     text-align: center;
     padding: 20px 30px;
-    margin: 0;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    margin: 0 auto;
+    width: 70%;
+    height: 375px;
 }
-.aboutcompany_panel {
+.aboutcompany_panel{
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    width: 100%;
-    padding: 0 20px;
+    list-style: none;
+    width: 25%;
+    text-align: right;
+    margin-left: 60px;
 }
-.aboutcompany_text {
-    font-size: 0.8em;
+.aboutcompany_text{
+    font-size: 0.75em;
+    text-align: justify;
+    margin-top: 0;
 }
 .aboutcompany_add_call{
     display: flex;
     flex-direction: column;
+    padding-right: 0;
+    margin-top: 0;
 }
 .aboutcompany_add, .aboutcompany_call{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.aboutcompany_call{
-    
 }
 .aboutcompany_add_icon, .aboutcompany_call_icon{
     color: #df5d1f;
@@ -1311,11 +1021,28 @@ a:hover {
 .aboutcompany_add_text, .aboutcompany_call_text{
     font-size: 0.7em;
     color: #fff;
-    padding: 0 10px;
+    padding: 0 5px;
+    text-align: justify;
+}
+.aboutcompany_call_text{
+    padding: 0;
+    margin-right: 12px;
+}
+.aboutcompany_call_text2{
+    font-size: 0.7em;
+    padding: 0;
+    margin-right: 7px;
+    direction: ltr;
+}
+.aboutcompany_call_icon{
+    font-size: 1.75em;
 }
 .visa_type_panel{
-    width: 100%;
-    
+    width: 25%;
+    margin-left: 0px;
+}
+.visa_type_maintitle{
+    text-align: right;
 }
 .visa_type_list_panel{
     text-align: center;
@@ -1325,13 +1052,14 @@ a:hover {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    padding-right: 0;
 }
 .visa_type_item{
     display: flex;
     flex-direction: row;
     align-items: center;
     font-size: 0.8em;
+    padding: 5px 0;
 }
 .visa_type_item:hover {
     color: #f96922;
@@ -1340,133 +1068,200 @@ a:hover {
     display: inline-block;
     padding: 0 10px;
 }
-.sub_news_text {
-    font-size: 0.9em;
+.recent_news_panel{
+    width: 40%;
+    margin-left: 0px;
 }
-.sub_news {
-    float: right;
-    text-align: justify;
-    width: 100%;
+.recent_news_maintitle{
+    text-align: right;
+}
+.recent_news_list_panel{
+    text-align: center;
+    margin: 0 auto;
+}
+.recent_news_list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0 auto;
+    padding-right: 0;
+}
+.recent_news_item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    font-size: 0.8em;
+}
+.recent_news_item_text1, .recent_news_item_text2{
+    display: inline-block;
     padding: 0 20px;
+    margin: 0;
+    font-size: 0.9em;
+    text-align: justify;
+    padding-bottom: 10px;
 }
-.socialmedia {
+.recent_news_item_text2{
+    font-size: 0.8em;
+}
+.recent_news_item_text1:hover, .recent_news_item_text2:hover{
+    color: #f96922;
+}
+.recent_news_image{
+    width: 75px;
+    height: 75px;
+    border: 1px solid #AEAEAE;
+    border-radius: 5px;
+}
+.recent_news_item_desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.newsletter_social_panel{
+    width: 25%;
+}
+.socialmedia{
     float: right;
     text-align: center;
     width: 33%;
     padding: 0 20px;
 }
-.socialmedia_panel {
+.newsletter_social_panel{
     margin: 0px;
     padding: 0px;
     height: 2.5em;
+    width: 25%;
 }
-.textarea_email {
-    width: 250px;
+.textarea_email{
+    width: 150px;
     height: 30px;
     float: right;
     text-align: right;
     padding: 5px;
-    border: 1.5px solid #AEAEAE;
-    border-radius: 5px;
+    border: 0px solid #AEAEAE;
+    border-radius: 0 3px 3px 0;
+    filter: drop-shadow(0 0 2px #aeaeae);
     transform: translate(0px, 0px);
+    position: relative;
 }
-.textarea_email:hover {
+.textarea_email:hover{
     border: 2.5px solid #178ff8;
-    border-radius: 5px;
-    transform: translate(0px, 0px);
 }
-.submit_Newsletters {
-    width: 100px;
+.submitbutton_Newsletters{
+    width: 55px;
     height: 30px;
-    background-color: #147AD6;
-    border: 1px solid #147AD6;
-    border-radius: 5px;
-    display: inline-block;
+    color: #fff;
+    font-size: 0.7em;
+    display: block;
+    background-color: #f96922;
+    border: 1px solid #f96922;
+    border-radius: 3px 0 0 3px;
     text-align: center;
-    transform-origin: center;
-    filter: drop-shadow(0 0 2px #178ff8);
-    transform: translate(-8px, 0px);
-}
-.submit_Newsletters:hover {
-    width: 110px;
-    height: 30px;
-    background-color: #105fa5;
-    border: 1px solid #105fa5;
+    right: 78.5%;
+    filter: drop-shadow(0 0 2px #f36118);
+    transform: translate(0px, 0px);
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+    position: absolute;
 }
-.submitbutton_Newsletters {
-    width: 80px;
-    height: 30px;
-    color: #ffffff;
-    align-items: center;
+.submitbutton_Newsletters:hover{
+    width: 60px;
+}
+.newsletter_text{
     font-size: 0.8em;
-    display: inline-block;
+    width: 100%;
 }
-.sociallinks {
+.socialmedia_panel{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding-right: 0px;
+}
+.socialmedia_maintitle{
+    font-size: 0.7em;
+    display: inline;
+    width: 100px;
+}
+.sociallinks{
     margin: 0;
-    padding: 0 100px;
-    display: block;
-    float: right;
-    border: 1px;
+    padding: 0;
 }
-.sociallist {
-    margin: 0px;
-    padding: 0px 0px;
+.sociallist{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
 }
-.socialitem {
-    list-style: none;
-    float: right;
-    padding: 0px 5px;
-    font-size: 25px;
-    color: #777777;
-    border-right: 1px solid #AEAEAE;
-}
-.socialmedia_text_panel {
+.newsletter_text_panel{
     float: right;
     text-align: justify;
-    width: 33%;
-    padding: 0 20px;
+    padding: 0;
+    width: 100%;
 }
-.socialmedia_text{
-    font-size: 0.9em;
-}
-.socialitem:nth-child(3) {
-    border-left: 1px solid #AEAEAE;
-}
-.socialitem:hover {
+.socialitem{
     list-style: none;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    padding: 0 7px;
+    color: #777777;
+}
+.socialitem:hover{
+    list-style: none;
+    display: inline-block;
     text-align: center;
-    padding: 0px 10px;
-    font-size: 30px;
-    background-color: #147AD6;
-    border-radius: 5px;
-    border-right: 1px solid #ffffff;
+    padding: 0px 5px;
 }
-.instaicon, .telegicon, .youticon {
-    color: #AEAEAE;
-    width: 10em;
-    height: 10em;
+.instaicon, .telegicon, .youticon{
+    color: #fff;
 }
-.instaicon:hover, .telegicon:hover, .youticon :hover {
-    color: #ffffff;
+.instaicon:hover, .telegicon:hover, .youticon:hover{
+    color: #f96922;
 }
-.copyright{
+.navfooter{
     background-color: #000f30;
     width: 100%;
     height: 50px;
-    transform: translate(0, 0);
-    float: right;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 100px;
+    align-items: center;
+}
+.scroll_top{
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #112256;
+    padding: 10px;
+}
+.navfootert_text_panel{
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
+}
+.navfootert_text{
+    font-size: 0.7em;
+    padding: 0 4px;
 }
 .copyright_text{
-    display: inline;
+    direction: ltr;
+    float: left;
+    text-align: left;
     text-align: center;
-    color: #777777;
+    color: #fff;
     line-height: 25px;
+    font-size: 0.7em;
+    margin: 0;
+    margin-right: 450px;
 }
 .copyright_icon {
-    color: #777777;
+    color: #fff;
 }
 @media (min-width:20em) and (max-width:30em){
     .box_footer{
